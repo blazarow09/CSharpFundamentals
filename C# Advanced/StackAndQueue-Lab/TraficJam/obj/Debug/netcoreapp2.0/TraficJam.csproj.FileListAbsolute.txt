@@ -1,0 +1,11 @@
+C:\Users\E6420\source\repos\C# Fundamentals\C# Advanced\StackAndQueue\TraficJam\bin\Debug\netcoreapp2.0\TraficJam.deps.json
+C:\Users\E6420\source\repos\C# Fundamentals\C# Advanced\StackAndQueue\TraficJam\bin\Debug\netcoreapp2.0\TraficJam.runtimeconfig.json
+C:\Users\E6420\source\repos\C# Fundamentals\C# Advanced\StackAndQueue\TraficJam\bin\Debug\netcoreapp2.0\TraficJam.runtimeconfig.dev.json
+C:\Users\E6420\source\repos\C# Fundamentals\C# Advanced\StackAndQueue\TraficJam\bin\Debug\netcoreapp2.0\TraficJam.dll
+C:\Users\E6420\source\repos\C# Fundamentals\C# Advanced\StackAndQueue\TraficJam\bin\Debug\netcoreapp2.0\TraficJam.pdb
+C:\Users\E6420\source\repos\C# Fundamentals\C# Advanced\StackAndQueue\TraficJam\obj\Debug\netcoreapp2.0\TraficJam.csprojResolveAssemblyReference.cache
+C:\Users\E6420\source\repos\C# Fundamentals\C# Advanced\StackAndQueue\TraficJam\obj\Debug\netcoreapp2.0\TraficJam.csproj.CoreCompileInputs.cache
+C:\Users\E6420\source\repos\C# Fundamentals\C# Advanced\StackAndQueue\TraficJam\obj\Debug\netcoreapp2.0\TraficJam.AssemblyInfoInputs.cache
+C:\Users\E6420\source\repos\C# Fundamentals\C# Advanced\StackAndQueue\TraficJam\obj\Debug\netcoreapp2.0\TraficJam.AssemblyInfo.cs
+C:\Users\E6420\source\repos\C# Fundamentals\C# Advanced\StackAndQueue\TraficJam\obj\Debug\netcoreapp2.0\TraficJam.dll
+C:\Users\E6420\source\repos\C# Fundamentals\C# Advanced\StackAndQueue\TraficJam\obj\Debug\netcoreapp2.0\TraficJam.pdb

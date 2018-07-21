@@ -6,9 +6,9 @@
 
 | Lectures       | Lab           | Exercise  |
 | ------------- |:-------------:|:-----:|
-| **Stacks and Queues** | [Stacks & Queues - Lab]()|[Stacks & Queues - Exercise]()  |
-| **Multidimensional Arrays** | [Multidimensional Arrays - Lab]() | [Multidimensional Arrays] () |
-| **Streams** | [Streams]() | [Streams]()|
-| **Functional Programming** | [Functional Programming - Lab] | [Functional Programming - Exercise]() |
+| **Stacks and Queues** | [Stacks & Queues - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Lab)|[Stacks & Queues - Exercise](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Exercise)  |
+| **Multidimensional Arrays** | [Multidimensional Arrays - Lab]() | [Multidimensional Arrays]() |
+| **Streams** | [Streams - Lab ]() | [Streams - Exercise]()|
+| **Functional Programming** | [Functional Programming - Lab]() | [Functional Programming - Exercise]() |
 
 [logo]: https://github.com/blazarow09/ProgrammingBasicsWithCsharp/blob/master/img/softuni-code-wizard.png "//"

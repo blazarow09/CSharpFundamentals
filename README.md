@@ -2,7 +2,7 @@
 
 # <a href="https://softuni.bg/"><p align="center">C# Fundamentals<p></a>
 
-## <p align="center"> <a href="https://softuni.bg/certificates/details/55823/ca46e274" > *CERTIFICATE* </a> </p>
+## <p align="center"> <a href="https://softuni.bg/" > *CERTIFICATE* - Upcomming</a> </p>
 
 | Lectures       | Lab           | Exercise  |
 | ------------- |:-------------:|:-----:|

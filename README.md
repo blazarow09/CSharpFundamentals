@@ -4,10 +4,8 @@
 
 ## <p align="center"> <a href="https://softuni.bg/" > *CERTIFICATE* - Upcomming</a> </p>
 
-
-| Lectures       | Lab           | Exercise  |
-| ------------- |:-------------:|:-----:|
 |           | C# Advanced        ||
+| Lectures       | Lab           | Exercise  |
 | ------------- |:-------------:|:-----:|
 | **Stacks and Queues** | [Stacks & Queues - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Lab)|[Stacks & Queues - Exercise](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Exercise)  |
 | **Multidimensional Arrays** | [Multidimensional Arrays - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/Multidimensional%20Arrays%20-%20Lab) | [Multidimensional Arrays]() |

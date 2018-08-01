@@ -6,13 +6,13 @@
 
 |           | C# Advanced        ||
 | ------------- |:-------------:|:-----:|
-| Lectures       | Lab           | Exercise  |
-|- [x] **Stacks and Queues** | [Stacks & Queues - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Lab)|[Stacks & Queues - Exercise](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Exercise)  |
-|- [x] **Multidimensional Arrays** | [Multidimensional Arrays - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/Multidimensional%20Arrays%20-%20Lab) | [Multidimensional Arrays]() |
-|- [-] **Streams** | [Streams - Lab ]() | [Streams - Exercise]()|
+| *Lectures       | Lab           | Exercise*  |
+| **Stacks and Queues** | [Stacks & Queues - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Lab)|[Stacks & Queues - Exercise](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Exercise)  |
+| **Multidimensional Arrays** | [Multidimensional Arrays - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/Multidimensional%20Arrays%20-%20Lab) | [Multidimensional Arrays]() |
+| **Streams** | [Streams - Lab ]() | [Streams - Exercise]()|
 | **Functional Programming** | [Functional Programming - Lab]() | [Functional Programming - Exercise]() |
 |           | **C# OOP Basics**       ||
-| Lectures       | Lab           | Exercise  |
+| *Lectures       | Lab           | Exercise*  |
 |**Definning Classes**|[Definning Classes - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20OOP%20Basics/DefiningClassesLab) | [Definning Classes - Exercise]()|
 |**Working with Abstraction**| [Working with Abstraction - Lab]() |[Working with Abstraction - Exercise]()|
 |**Encapsulation**| [Encapsulation - Lab]() |[Encapsulation - Exercise]()|
@@ -20,7 +20,7 @@
 |**Interfaces and Abstraction**| [Interfaces and Abstraction - Lab]() |[Interfaces and Abstraction - Exercise]()|
 |**Polymorphism**| [Polymorphism - Lab]() |[Polymorphism - Exercise]()|
 |           | **C# OOP Advanced**       ||
-| Lectures       | Lab           | Exercise  |
+| *Lectures       | Lab           | Exercise*  |
 |**Solid**| [Solid - Lab]() | [Solid - Exercise]()| 
 |**Generics** |[Generics - Lab]() |[Generics - Exercise]() |
 |**Iterator and Comparators** |[Iterator and Comparators - Lab]() |[Iterator and Comparators - Exercise]() |

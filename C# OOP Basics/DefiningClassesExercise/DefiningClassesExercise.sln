@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpinionPoll", "OpinionPoll\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateModifier", "DateModifier\DateModifier.csproj", "{4F40D0EE-1DA9-4A29-829C-0B57B2B65A43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyRoaster", "CompanyRoaster\CompanyRoaster.csproj", "{EAFBCC8B-3F25-46BF-BF64-F69054358406}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4F40D0EE-1DA9-4A29-829C-0B57B2B65A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F40D0EE-1DA9-4A29-829C-0B57B2B65A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F40D0EE-1DA9-4A29-829C-0B57B2B65A43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFBCC8B-3F25-46BF-BF64-F69054358406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFBCC8B-3F25-46BF-BF64-F69054358406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFBCC8B-3F25-46BF-BF64-F69054358406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFBCC8B-3F25-46BF-BF64-F69054358406}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

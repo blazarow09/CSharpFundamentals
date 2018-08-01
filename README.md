@@ -12,7 +12,7 @@
 | **Streams** | [Streams - Lab ]() | [Streams - Exercise]()|
 | **Functional Programming** | [Functional Programming - Lab]() | [Functional Programming - Exercise]() |
 |           | **C# OOP Basics**       ||
-| *Lectures*       | *Lab           | *Exercise*  |
+| *Lectures*       | *Lab*          | *Exercise*  |
 |**Definning Classes**|[Definning Classes - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20OOP%20Basics/DefiningClassesLab) | [Definning Classes - Exercise]()|
 |**Working with Abstraction**| [Working with Abstraction - Lab]() |[Working with Abstraction - Exercise]()|
 |**Encapsulation**| [Encapsulation - Lab]() |[Encapsulation - Exercise]()|

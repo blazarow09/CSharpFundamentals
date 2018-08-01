@@ -3,7 +3,7 @@
 # <a href="https://softuni.bg/"><p align="center">C# Fundamentals<p></a>
 
 ## <p align="center"> <a href="https://softuni.bg/" > *CERTIFICATE* - Upcomming</a> </p>
-||                C# Advanced               ||
+
 | Lectures       | Lab           | Exercise  |
 | ------------- |:-------------:|:-----:|
 | **Stacks and Queues** | [Stacks & Queues - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Lab)|[Stacks & Queues - Exercise](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Exercise)  |

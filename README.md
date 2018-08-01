@@ -6,6 +6,7 @@
 
 
 | Lectures       | Lab           | Exercise  |
+| ------------- |:-------------:|:-----:|
 |           | C# Advanced        ||
 | ------------- |:-------------:|:-----:|
 | **Stacks and Queues** | [Stacks & Queues - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Lab)|[Stacks & Queues - Exercise](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Exercise)  |

@@ -19,5 +19,5 @@
 |**Inheritance**| [Inheritance - Lab]() |[Inheritance - Exercise]()|
 |**Interfaces and Abstraction**| [Interfaces and Abstraction - Lab]() |[Interfaces and Abstraction - Exercise]()|
 |**Polymorphism**| [Polymorphism - Lab]() |[Polymorphism - Exercise]()|
-[logo]: https://github.com/blazarow09/ProgrammingBasicsWithCsharp/blob/master/img/softuni-code-wizard.png "//"
+
 

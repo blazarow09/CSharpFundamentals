@@ -11,6 +11,9 @@
 | **Multidimensional Arrays** | [Multidimensional Arrays - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/Multidimensional%20Arrays%20-%20Lab) | [Multidimensional Arrays]() |
 | **Streams** | [Streams - Lab ]() | [Streams - Exercise]()|
 | **Functional Programming** | [Functional Programming - Lab]() | [Functional Programming - Exercise]() |
-
+|           | C# OOP Basics       ||
+| ------------- |:-------------:|:-----:|
+| Lectures       | Lab           | Exercise  |
+|**Definning Classes**|[Definning Classes](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20OOP%20Basics/DefiningClassesLab) |
 [logo]: https://github.com/blazarow09/ProgrammingBasicsWithCsharp/blob/master/img/softuni-code-wizard.png "//"
 

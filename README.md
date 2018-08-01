@@ -14,6 +14,10 @@
 |           | **C# OOP Basics**       ||
 | Lectures       | Lab           | Exercise  |
 |**Definning Classes**|[Definning Classes - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20OOP%20Basics/DefiningClassesLab) | [Definning Classes - Exercise]()|
-
+|**Working with Abstraction**| [Working with Abstraction - Lab]() |[Working with Abstraction - Exercise]()|
+|**Encapsulation**| [Encapsulation - Lab]() |[Encapsulation - Exercise]()|
+|**Inheritance**| [Inheritance - Lab]() |[Inheritance - Exercise]()|
+|**Interfaces and Abstraction**| [Interfaces and Abstraction - Lab]() |[Interfaces and Abstraction - Exercise]()|
+|**Polymorphism**| [Polymorphism - Lab]() |[Polymorphism - Exercise]()|
 [logo]: https://github.com/blazarow09/ProgrammingBasicsWithCsharp/blob/master/img/softuni-code-wizard.png "//"
 

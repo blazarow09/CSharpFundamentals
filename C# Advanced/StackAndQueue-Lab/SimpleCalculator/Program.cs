@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SimpleCalculator
 {
@@ -9,34 +10,24 @@ namespace SimpleCalculator
         {
             var input = Console.ReadLine().Split();
 
-            var stack = new Stack<string>();
-
-            for (int i = input.Length - 1; i >= 0; i--)
-            {
-                stack.Push(input[i]);
-            }
-
-            var result = 0;
+            var stack = new Stack<string>(input.Reverse());
 
             while (stack.Count != 1)
             {
                 var leftOperand = int.Parse(stack.Pop());
-                var symbol = stack.Pop();
+                var operand = stack.Pop();
                 var rightOperand = int.Parse(stack.Pop());
 
-                switch (symbol)
+                switch (operand)
                 {
                     case "+":
-                         result = leftOperand + rightOperand;
-                        stack.Push(result.ToString());
+                        stack.Push((leftOperand + rightOperand).ToString());
                         break;
                     case "-":
-                         result = leftOperand - rightOperand;
-                        stack.Push(result.ToString());
+                        stack.Push((leftOperand - rightOperand).ToString());
                         break;
                 }
             }
-
             Console.WriteLine(stack.Peek());
         }
     }

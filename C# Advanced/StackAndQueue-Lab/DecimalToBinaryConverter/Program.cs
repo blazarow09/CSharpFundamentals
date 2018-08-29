@@ -7,27 +7,27 @@ namespace DecimalToBinaryConverter
     {
         static void Main(string[] args)
         {
-            var input = int.Parse(Console.ReadLine());
+            var inputInDecimal = int.Parse(Console.ReadLine());
 
             var stack = new Stack<int>();
 
-            if (input == 0)
+            if (inputInDecimal == 0)
             {
                 Console.WriteLine(0);
+                return;
             }
 
-            while (input > 0)
+            while (inputInDecimal > 0)
             {
-                stack.Push(input % 2);
-                input /= 2;
+                stack.Push(inputInDecimal % 2);
+                inputInDecimal /= 2;
             }
 
-            while(stack.Count > 0)
+            while (stack.Count > 0)
             {
-                Console.Write(stack.Pop());
+            Console.Write(stack.Pop());
             }
 
-            Console.WriteLine();
         }
     }
 }

@@ -8,19 +8,20 @@ namespace ReverseString
         static void Main(string[] args)
         {
             var input = Console.ReadLine();
-            var rev = new Stack<char>();
 
-            foreach (var word in input)
+            var stack = new Stack<char>();
+
+            foreach (var character in input)
             {
-                rev.Push(word);
+                stack.Push(character);
             }
 
-            while (rev.Count > 0)
+            while (stack.Count > 0)
             {
-                Console.Write(rev.Pop());
+                Console.Write(stack.Pop().ToString());
             }
+
             Console.WriteLine();
         }
-
     }
 }

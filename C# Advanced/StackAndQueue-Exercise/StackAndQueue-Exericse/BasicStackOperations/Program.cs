@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace BasicStackOperations
 {
@@ -8,15 +7,20 @@ namespace BasicStackOperations
     {
         static void Main(string[] args)
         {
-            var comands = Console.ReadLine();
-            var toPush = Console.ReadLine().Split();
+            var commandArgs = Console.ReadLine().Split();
+            var toPush = int.Parse(commandArgs[0]);
+            var toPop = int.Parse(commandArgs[1]);
+            var toFind = int.Parse(commandArgs[2]);
 
-            var tokens = comands.Split();
-            var countToPush = tokens[0];
-            var toPop = int.Parse(tokens[1]);
-            var toFind = tokens[2];
+            var elements = Console.ReadLine().Split();
 
-            var stack = new Stack<string>(toPush);
+            var stack = new Stack<int>();
+            var min = 0;
+
+            for (int i = 0; i < toPush; i++)
+            {
+                stack.Push(int.Parse(elements[i]));
+            }
 
             for (int i = 0; i < toPop; i++)
             {
@@ -27,16 +31,27 @@ namespace BasicStackOperations
             {
                 Console.WriteLine("true");
             }
-            else if (stack.Count == 0)
+            else if (stack.Count < 1)
             {
                 Console.WriteLine(0);
             }
             else
             {
-                var newStack = stack.ToArray().Min();
-                Console.WriteLine(newStack);
+                //var newStack = stack.ToArray().Min(); - Alternative
+                //Console.WriteLine(newStack);
+
+                int[] array = stack.ToArray();
+                int max = array[0];
+                for (int i = 1; i < array.Length; i++)
+                {
+                    if (array[i] < max)
+                    {
+
+                        max = array[i];
+                    }
+                }
+                Console.WriteLine(max);
             }
-        
-        }
+        } 
     }
 }

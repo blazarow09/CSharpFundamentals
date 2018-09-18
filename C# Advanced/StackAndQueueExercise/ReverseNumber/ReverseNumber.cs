@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace ReverseNumber
+﻿namespace ReverseNumber
 {
-    class Program
+    using System;
+    using System.Collections.Generic;
+
+    class ReverseNumber
     {
         static void Main(string[] args)
         {
@@ -15,8 +15,6 @@ namespace ReverseNumber
             {
                 Console.Write(item.ToString() + " ");
             }
-            
-
         }
     }
 }

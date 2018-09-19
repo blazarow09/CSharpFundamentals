@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace CalculateSequenceWithQueue
+﻿namespace CalculateSequenceWithQueue
 {
+    using System;
+    using System.Collections.Generic;
+
     class CalculateSequenceWithQueue
     {
         static void Main(string[] args)

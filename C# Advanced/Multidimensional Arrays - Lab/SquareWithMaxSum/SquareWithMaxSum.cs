@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Multidimensional_Arrays_Lab
 {
-    class Program
+    class SquareWithMaxSum
     {
         static void Main(string[] args)
         {

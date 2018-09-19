@@ -8,7 +8,7 @@ namespace Multidimensional_Arrays_Lab
         static void Main(string[] args)
         {
             int[] rowsAndColumns = Console.ReadLine()
-                .Split(new string[] { ", " }, StringSplitOptions.None)
+                .Split(", ")
                 .Select(int.Parse)
                 .ToArray();
             int[,] matrix = new int[rowsAndColumns[0], rowsAndColumns[1]];
@@ -16,7 +16,7 @@ namespace Multidimensional_Arrays_Lab
             for (int rows = 0; rows < rowsAndColumns[0]; rows++)
             {
                 var rowValues = Console.ReadLine()
-                    .Split(new string[] { ", " }, StringSplitOptions.None)
+                    .Split(", ")
                     .Select(int.Parse)
                     .ToArray();
 
@@ -46,7 +46,7 @@ namespace Multidimensional_Arrays_Lab
             }
 
             Console.WriteLine(matrix[rowIndex, colIndex] + " " + matrix[rowIndex, colIndex + 1]);
-            Console.WriteLine(matrix[rowIndex + 1, colIndex] +  " " +matrix[rowIndex + 1, colIndex + 1]);
+            Console.WriteLine(matrix[rowIndex + 1, colIndex] + " " + matrix[rowIndex + 1, colIndex + 1]);
             Console.WriteLine(sum);
         }
     }

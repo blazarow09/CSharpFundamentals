@@ -1,5 +1,4 @@
-﻿
-namespace BasicStackOperations
+﻿namespace BasicStackOperations
 {
     using System;
     using System.Collections.Generic;

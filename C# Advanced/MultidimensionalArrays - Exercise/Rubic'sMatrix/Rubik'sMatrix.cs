@@ -1,72 +1,58 @@
-﻿namespace Rubic_sMatrix
-{
-    using System;
-    using System.Linq;
+﻿using System;
+using System.Linq;
 
-    class RubicsMatrix
+namespace RubiksMatrix
+{
+    public class StartUp
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             var sizes = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                .Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
-
-            var rowSize = sizes[0];
-            var colSize = sizes[1];
-
-            var matrix = new int[rowSize, colSize];
-
-            var bluePrint = new int[rowSize, colSize];
-
-            var matrixValue = 1;
-
-            for (int row = 0; row < matrix.GetLength(0); row++)
+            var numberOfCommands = int.Parse(Console.ReadLine());
+            var matrix = new int[sizes[0], sizes[1]];
+            var bluePrint = new int[sizes[0], sizes[1]];
+            var number = 1;
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                for (int col = 0; col < matrix.GetLength(1); col++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-
-                    matrix[row, col] = matrixValue;
-                    matrixValue++;
+                    matrix[i, j] = number++;
                 }
             }
-
-            for (int row = 0; row < matrix.GetLength(0); row++)
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                for (int col = 0; col < matrix.GetLength(1); col++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    bluePrint[row, col] = matrix[row, col];
+                    bluePrint[i, j] = matrix[i, j];
                 }
             }
-
-            int N = int.Parse(Console.ReadLine());
-
-            for (int index = 0; index < N; index++)
+            for (int i = 0; i < numberOfCommands; i++)
             {
-                var cmdArgs = Console.ReadLine()
-                    .Split(" ", StringSplitOptions.RemoveEmptyEntries);
-
-                var rowOrCol = int.Parse(cmdArgs[0]);
-                var direction = cmdArgs[1];
-                var moves = int.Parse(cmdArgs[2]);
-
-                if (direction == "up" || direction == "down")
+                var commandArgs = Console.ReadLine()
+                    .Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)
+                    .ToArray();
+                var index = int.Parse(commandArgs[0]);
+                var command = commandArgs[1];
+                var distance = int.Parse(commandArgs[2]);
+                if (command == "up" || command == "down")
                 {
-                    ShiftColumn(matrix, direction, index, moves);
+                    ShiftColumn(matrix, command, index, distance);
                 }
-                else if (direction == "right" || direction == "left")
+                else if (command == "right" || command == "left")
                 {
-                    ShiftRow(matrix, direction, index, moves);
+                    ShiftRow(matrix, command, index, distance);
                 }
             }
-
-            for (int row = 0; row < matrix.GetLength(0); row++)
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                for (int col = 0; col < matrix.GetLength(1); col++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    if (matrix[row, col] != bluePrint[row, col])
+                    if (matrix[i, j] != bluePrint[i, j])
                     {
-                        EqualizeValue(matrix, bluePrint, ref row, ref col);
+                        EqualizeValue(matrix, bluePrint, ref i, ref j);
                     }
                     else
                     {
@@ -79,79 +65,74 @@
         private static void EqualizeValue(int[,] matrix, int[,] bluePrint, ref int coordX, ref int coordY)
         {
             var swap = 0;
-
-            for (int row = 0; row < matrix.GetLength(0); row++)
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                for (int col = 0; col < matrix.GetLength(1); col++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    if (matrix[row, col] == bluePrint[coordX, coordY])
+                    if (matrix[i, j] == bluePrint[coordX, coordY])
                     {
-                        Console.WriteLine($"Swap ({coordX}, {coordY}) with ({row}, {col})");
-
+                        Console.WriteLine($"Swap ({coordX}, {coordY}) with ({i}, {j})");
                         swap = matrix[coordX, coordY];
-                        matrix[coordX, coordY] = matrix[row, col];
-                        matrix[row, col] = swap;
+                        matrix[coordX, coordY] = matrix[i, j];
+                        matrix[i, j] = swap;
                         return;
                     }
                 }
             }
         }
 
-        private static void ShiftRow(int[,] matrix, string direction, int index, int moves)
+        private static void ShiftRow(int[,] matrix, string command, int index, int distance)
         {
             var last = 0;
-
-            if (direction == "left")
+            if (command == "left")
             {
-                for (int row = 0; row < moves % matrix.GetLength(1); row++)
+                for (int i = 0; i < distance % matrix.GetLength(1); i++)
                 {
                     last = matrix[index, 0];
-
-                    for (int col = 0, i = 1; col < matrix.GetLength(1) -1; col++, i++)
+                    for (int j = 0, k = 1; j < matrix.GetLength(1) - 1; j++, k++)
                     {
-                        matrix[index, col] = matrix[index, i];
+                        matrix[index, j] = matrix[index, k];
                     }
                     matrix[index, matrix.GetLength(1) - 1] = last;
                 }
             }
-            else if (direction == "right")
+            else if (command == "right")
             {
-                for (int row = 0; row < moves % matrix.GetLength(1); row++)
+                for (int i = 0; i < distance % matrix.GetLength(1); i++)
                 {
                     last = matrix[index, matrix.GetLength(1) - 1];
-
-                    for (int col = matrix.GetLength(1) - 1, i = matrix.GetLength(1) - 2; col >= 1; col--, i--)
+                    for (int j = matrix.GetLength(1) - 1, k = matrix.GetLength(1) - 2; j >= 1; j--, k--)
                     {
-                        matrix[index, col] = matrix[index, i];
+                        matrix[index, j] = matrix[index, k];
                     }
                     matrix[index, 0] = last;
                 }
             }
         }
 
-        private static void ShiftColumn(int[,] matrix, string direction, int index, int moves)
+        private static void ShiftColumn(int[,] matrix, string command, int index, int distance)
         {
             var last = 0;
-            if (direction == "down")
+            if (command == "down")
             {
-                for (int row = 0; row < moves % matrix.GetLength(0); row++)
+                for (int i = 0; i < distance % matrix.GetLength(0); i++)
                 {
                     last = matrix[matrix.GetLength(0) - 1, index];
-                    for (int col = matrix.GetLength(0) - 1, i = matrix.GetLength(0) - 2; col >= 1; col--, i--)
+                    for (int j = matrix.GetLength(0) - 1, k = matrix.GetLength(0) - 2; j >= 1; j--, k--)
                     {
-                        matrix[col, index] = matrix[i, index];
+                        matrix[j, index] = matrix[k, index];
                     }
                     matrix[0, index] = last;
                 }
             }
-            else if (direction == "up")
+            else if (command == "up")
             {
-                for (int row = 0; row < moves % matrix.GetLength(0); row++)
+                for (int i = 0; i < distance % matrix.GetLength(0); i++)
                 {
                     last = matrix[0, index];
-                    for (int col = 0, i = 1; col < matrix.GetLength(0) - 1; col++, i++)
+                    for (int j = 0, k = 1; j < matrix.GetLength(0) - 1; j++, k++)
                     {
-                        matrix[col, index] = matrix[i, index];
+                        matrix[j, index] = matrix[k, index];
                     }
                     matrix[matrix.GetLength(0) - 1, index] = last;
                 }

@@ -1,45 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace RecordUniqueNames
+﻿namespace RecordUniqueNames
 {
+    using System;
+    using System.Collections.Generic;
+
     class RecordUniqueNames
     {
         static void Main(string[] args)
         {
             var count = int.Parse(Console.ReadLine());
 
-            var dictionary = new Dictionary<string, List<double>>();
+            var book = new HashSet<String>();
 
             for (int i = 0; i < count; i++)
             {
-                var line = Console.ReadLine()
-                 .Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                var line = Console.ReadLine();
 
-                var name = line[0];
-                var grade = double.Parse(line[1]);
-
-                if (dictionary.ContainsKey(name) == false)
-                {
-                    dictionary[name] = new List<double>() { grade };
-                }
-                else
-                {
-                    dictionary[name].Add(grade);
-                }
+                book.Add(line);
             }
 
-            foreach (var item in dictionary)
-            {
-                Console.Write($"{item.Key} -> ");
-
-                foreach (var grades in item.Value)
-                {
-                    Console.Write($"{ grades:f2} ");
-                }
-                Console.WriteLine($"(avg: {item.Value.Average():F2})");
-            }
+            Console.WriteLine(String.Join(Environment.NewLine, book));
         }
     }
 }

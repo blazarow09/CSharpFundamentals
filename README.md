@@ -7,7 +7,7 @@
 |           | C# Advanced        ||
 | ------------- |:-------------:|:-----:|
 | *Lectures*       |*Lab*           | *Exercise*  |
-| **Stacks and Queues** | [Stacks & Queues - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Lab)|[Stacks & Queues - Exercise](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue-Exercise)  |
+| **Stacks and Queues** | [Stacks & Queues - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueue)|[Stacks & Queues - Exercise](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/StackAndQueueExercise)  |
 | **Multidimensional Arrays** | [Multidimensional Arrays - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/Multidimensional%20Arrays%20-%20Lab) | [Multidimensional Arrays](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/MultidimensionalArrays%20-%20Exercise) |
 | **Sets And Dictionaries Advanced** | [Sets And Dictionaries Advanced - Lab](https://github.com/blazarow09/CSharpFundamentals/tree/master/C%23%20Advanced/DictionariesAndSetsAdvanced%20-%20Lab) | [Sets And Dictionaries Advanced - Exercise]() |
 | **Streams** | [Streams - Lab ]() | [Streams - Exercise]()|

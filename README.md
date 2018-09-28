@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/blazarow09/ProgrammingBasicsWithCsharp/blob/master/img/logo.png" /></p>
 
-# <a href="https://softuni.bg/"><p align="center">C# Fundamentals<p></a>
+# <a href="https://softuni.bg/modules/20/csharp-fundamentals"><p align="center">C# Fundamentals<p></a>
 
 ## <p align="center"> <a href="https://softuni.bg/" > *CERTIFICATE* - Upcomming</a> </p>
 

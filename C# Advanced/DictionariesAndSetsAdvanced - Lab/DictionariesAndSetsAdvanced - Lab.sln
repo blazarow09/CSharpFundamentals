@@ -5,9 +5,11 @@ VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AverageStudentGrades", "AverageStudentGrades\AverageStudentGrades.csproj", "{B0197F15-146B-4D95-8817-17A28F9AA3AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductShop", "ProductShop\ProductShop.csproj", "{99DE0D8F-21AB-471A-8B06-1EFD69F8D1C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductShop", "ProductShop\ProductShop.csproj", "{99DE0D8F-21AB-471A-8B06-1EFD69F8D1C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitiesByContinentAndCountry", "CitiesByContinentAndCountry\CitiesByContinentAndCountry.csproj", "{EB8A20B3-DC51-4B2A-B949-FCC486B56AEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitiesByContinentAndCountry", "CitiesByContinentAndCountry\CitiesByContinentAndCountry.csproj", "{EB8A20B3-DC51-4B2A-B949-FCC486B56AEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUniParty", "SoftUniParty\SoftUniParty.csproj", "{9D6CFBC2-F3C1-4835-8F1A-4C0A90F1FF88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{EB8A20B3-DC51-4B2A-B949-FCC486B56AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB8A20B3-DC51-4B2A-B949-FCC486B56AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB8A20B3-DC51-4B2A-B949-FCC486B56AEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D6CFBC2-F3C1-4835-8F1A-4C0A90F1FF88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D6CFBC2-F3C1-4835-8F1A-4C0A90F1FF88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D6CFBC2-F3C1-4835-8F1A-4C0A90F1FF88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D6CFBC2-F3C1-4835-8F1A-4C0A90F1FF88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

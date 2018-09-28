@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordUniqueNames", "RecordUniqueNames.csproj", "{6BEB6595-7571-400A-89F4-B1392B1579B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BEB6595-7571-400A-89F4-B1392B1579B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BEB6595-7571-400A-89F4-B1392B1579B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BEB6595-7571-400A-89F4-B1392B1579B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BEB6595-7571-400A-89F4-B1392B1579B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89EA58C4-70F1-42C1-9969-2E0DFB8FC355}
+	EndGlobalSection
+EndGlobal

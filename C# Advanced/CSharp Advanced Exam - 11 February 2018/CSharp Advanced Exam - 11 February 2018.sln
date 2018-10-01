@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyRevolver", "KeyRevolver\KeyRevolver.csproj", "{B56C2756-3808-4DB1-A76B-5035FEA0E250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sneaking", "Sneaking\Sneaking.csproj", "{A4DF491D-8929-4C29-AC20-8833D4DFB12D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoBlockchain", "CryptoBlockchain\CryptoBlockchain.csproj", "{EDD2D6E5-EABC-4224-A326-7516918D3731}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitInfo", "HitInfo\HitInfo.csproj", "{C900EC65-1C81-4F75-9E27-81C5D5D814B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B56C2756-3808-4DB1-A76B-5035FEA0E250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56C2756-3808-4DB1-A76B-5035FEA0E250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56C2756-3808-4DB1-A76B-5035FEA0E250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56C2756-3808-4DB1-A76B-5035FEA0E250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4DF491D-8929-4C29-AC20-8833D4DFB12D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4DF491D-8929-4C29-AC20-8833D4DFB12D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4DF491D-8929-4C29-AC20-8833D4DFB12D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4DF491D-8929-4C29-AC20-8833D4DFB12D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD2D6E5-EABC-4224-A326-7516918D3731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD2D6E5-EABC-4224-A326-7516918D3731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD2D6E5-EABC-4224-A326-7516918D3731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD2D6E5-EABC-4224-A326-7516918D3731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C900EC65-1C81-4F75-9E27-81C5D5D814B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C900EC65-1C81-4F75-9E27-81C5D5D814B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C900EC65-1C81-4F75-9E27-81C5D5D814B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C900EC65-1C81-4F75-9E27-81C5D5D814B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CA6A91F-FFD0-4BFF-B9A6-A4C6934725FB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftUniBarIncome", "SoftUniBarIncome\SoftUniBarIncome.csproj", "{14ABB355-AEFF-41F1-B1D0-6437AF5B520B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftUniExamResults", "SoftUniExamResults\SoftUniExamResults.csproj", "{922D3233-B096-4ACC-9653-A64A530A2484}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regeh", "Regeh\Regeh.csproj", "{4A0ABC0B-9934-4D99-B14D-494A96288087}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketTrouble", "TicketTrouble\TicketTrouble.csproj", "{FD21AA7A-47E5-45EC-A39D-E43B9BF3990D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sneaking", "Sneaking\Sneaking.csproj", "{A0DD838B-8B7B-4E9B-AA90-971C76D6FFBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOBAChallenger", "MOBAChallenger\MOBAChallenger.csproj", "{3177C39C-EAD6-40FA-A5B2-DC062A323A31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14ABB355-AEFF-41F1-B1D0-6437AF5B520B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14ABB355-AEFF-41F1-B1D0-6437AF5B520B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14ABB355-AEFF-41F1-B1D0-6437AF5B520B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14ABB355-AEFF-41F1-B1D0-6437AF5B520B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922D3233-B096-4ACC-9653-A64A530A2484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922D3233-B096-4ACC-9653-A64A530A2484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922D3233-B096-4ACC-9653-A64A530A2484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922D3233-B096-4ACC-9653-A64A530A2484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A0ABC0B-9934-4D99-B14D-494A96288087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A0ABC0B-9934-4D99-B14D-494A96288087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A0ABC0B-9934-4D99-B14D-494A96288087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A0ABC0B-9934-4D99-B14D-494A96288087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD21AA7A-47E5-45EC-A39D-E43B9BF3990D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD21AA7A-47E5-45EC-A39D-E43B9BF3990D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD21AA7A-47E5-45EC-A39D-E43B9BF3990D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD21AA7A-47E5-45EC-A39D-E43B9BF3990D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DD838B-8B7B-4E9B-AA90-971C76D6FFBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DD838B-8B7B-4E9B-AA90-971C76D6FFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DD838B-8B7B-4E9B-AA90-971C76D6FFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DD838B-8B7B-4E9B-AA90-971C76D6FFBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3177C39C-EAD6-40FA-A5B2-DC062A323A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3177C39C-EAD6-40FA-A5B2-DC062A323A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3177C39C-EAD6-40FA-A5B2-DC062A323A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3177C39C-EAD6-40FA-A5B2-DC062A323A31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA06928A-BF1F-4899-9BFE-432F079E1F2F}
+	EndGlobalSection
+EndGlobal

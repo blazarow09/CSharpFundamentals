@@ -27,6 +27,4 @@ public class Family
             .OrderByDescending(m => m.Age)
             .FirstOrDefault();
     }
-
-
 }

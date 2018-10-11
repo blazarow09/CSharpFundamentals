@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 public class Person
 {
@@ -27,18 +26,15 @@ public class Person
 
     }
 
-    public Person(string name)
+    public Person(string name, int age)
     {
         if (string.IsNullOrEmpty(name))
         {
             throw new NullReferenceException("Invalid name");
+
         }
 
         this.name = name;
-    }
-
-    public Person(string name, int age) : this(name)
-    {
         this.age = age;
     }
 }

@@ -49,7 +49,7 @@ class StartUp
 
         foreach (var car in cars)
         {
-            Console.WriteLine($"{car.Model} {car.FuelAmount} {car.Distance}");
+            Console.WriteLine($"{car.Model} {car.FuelAmount:f2} {car.Distance}");
         }
     }
 }

@@ -1,53 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
+//using System.Reflection;
 
 class StartUp
 {
     static void Main(string[] args)
     {
-        var familyBook = new Dictionary<string, Family>();
 
-        var count = int.Parse(Console.ReadLine());
+        //MethodInfo oldestMember = typeof(Family).GetMethod("GetOldestMember");
+        //MethodInfo addMember = typeof(Family).GetMethod("AddMember");
 
-        for (int i = 0; i < count; i++)
+        //***Checks whether the input is not null***//
+
+        //if (oldestMember == null || addMember == null)
+        //{
+        //    throw new Exception();
+        //}
+
+        var family = new Family();
+
+        var membersCount = int.Parse(Console.ReadLine());
+
+        while (membersCount > 0) 
         {
-            AddMember(count, familyBook);
+            var personData = Console.ReadLine()
+                .Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            var member = new Person(personData[0], int.Parse(personData[1]));
+
+            family.AddMember(member);
+
+            membersCount--;
         }
 
-        GetOldestMember(familyBook);
-    }
+        var oldestMemberPrint = family.GetOldestMember();
 
-    private static void GetOldestMember(Dictionary<string, Family> familyBook)
-    {
-        var oldestMemberAge = 0;
-        var oldestMemberName = "";
-
-        foreach (var member in familyBook)
-        {
-            if (member.Value.Age > oldestMemberAge)
-            {
-                oldestMemberName = member.Value.Name;
-                oldestMemberAge = member.Value.Age;
-            }
-        }
-
-        Console.WriteLine($"{oldestMemberName} {oldestMemberAge}");
-    }
-
-    private static void AddMember(int count, Dictionary<string, Family> familyBook)
-    {
-        var line = Console.ReadLine()
-            .Split(" ", StringSplitOptions.RemoveEmptyEntries);
-
-        var name = line[0];
-        var age = int.Parse(line[1]);
-
-        if (familyBook.ContainsKey(name) == false)
-        {
-            var family = new Family();
-            family.Name = name;
-            family.Age = age;
-            familyBook.Add(name, family);
-        }
+        Console.WriteLine($"{oldestMemberPrint.Name} {oldestMemberPrint.Age}");
     }
 }

@@ -1,21 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 public class Family
 {
-    private string name;
+    private List<Person> people;
 
-    public string Name
+    public Family()
     {
-        get { return name; }
-        set { name = value; }
+        this.people = new List<Person>();
     }
 
-    private int age;
-
-    public int Age
+    public List<Person> People
     {
-        get { return age; }
-        set { age = value; }
+        get { return this.people; }
+        set { this.people = value; }
     }
+
+    public void AddMember(Person member)
+    {
+        this.people.Add(member);
+    }
+
+    public Person GetOldestMember()
+    {
+        return this.people
+            .OrderByDescending(m => m.Age)
+            .FirstOrDefault();
+    }
+
+
 }

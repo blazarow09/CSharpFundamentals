@@ -1,27 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-public class Person
+﻿namespace DefiningClasses
 {
-    private string name;
-
-    public string Name
+    public class Person
     {
-        get { return name; }
-        set { name = value; }
-    }
+        private string name;
 
-    private int age;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
 
-    public int Age
-    {
-        get { return age; }
-        set { age = value; }
-    }
+        private int age;
 
-    public override string ToString()
-    {
-        return $"Name: {this.Name}, Age {this.Age}";
+        public int Age
+        {
+            get { return age; }
+            set { age = value; }
+        }
     }
 }

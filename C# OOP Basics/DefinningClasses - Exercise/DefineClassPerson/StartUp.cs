@@ -1,14 +1,10 @@
-﻿using System;
-
-class StartUp
+﻿namespace DefiningClasses
 {
-    static void Main(string[] args)
+    public class StartUp
     {
-        Person person = new Person();
-
-        person.Name = Console.ReadLine();
-        person.Age = int.Parse(Console.ReadLine());
-
-        Console.WriteLine(person.ToString());
+        static void Main(string[] args)
+        {
+            
+        }
     }
 }

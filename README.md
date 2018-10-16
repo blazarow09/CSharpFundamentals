@@ -2,7 +2,7 @@
 
 # <a href="https://softuni.bg/modules/20/csharp-fundamentals"><p align="center">C# Fundamentals<p></a>
 
-## <p align="center"> <a href="https://softuni.bg/certificates/details/58213/1bfcfba0" > *CERTIFICATE* CSharp Advanced </a> </p>
+## <p align="center"> <a href="https://softuni.bg/certificates/details/58213/1bfcfba0" > *CERTIFICATE* C# Advanced </a> </p>
 
 |           | C# Advanced        ||
 | ------------- |:-------------:|:-----:|
@@ -26,5 +26,5 @@
 |**Generics** |[Generics - Lab]() |[Generics - Exercise]() |
 |**Iterator and Comparators** |[Iterator and Comparators - Lab]() |[Iterator and Comparators - Exercise]() |
 |**Reflection and Attributes** |[Reflection and Attributes - Lab]() |[Reflection and Attributes - Exericse]() |
-|**Unit Testind** |[Unit Testind - Lab]() |[Unit Testind - Exercise]() |
+|**Unit Testing** |[Unit Testing - Lab]() |[Unit Testing - Exercise]() |
 |**Object Communication and Events** |[Object Communication and Events - Lab]() |[Object Communication and Events - Exericse]() |

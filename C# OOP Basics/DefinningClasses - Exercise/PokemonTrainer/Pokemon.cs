@@ -12,13 +12,11 @@
             private set { health = value; }
         }
 
-
         public string Element
         {
             get { return element; }
             private set { element = value; }
         }
-
 
         public string Name
         {

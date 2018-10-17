@@ -6,7 +6,7 @@ namespace RectangleIntersection
 {
     public class StartUp
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var tokens = Console.ReadLine()
                  .Split(" ", StringSplitOptions.RemoveEmptyEntries);
@@ -41,7 +41,7 @@ namespace RectangleIntersection
                 var secondRectangle = rectangles.First(r => r.Id == secondId);
 
                 if (firstRectangle.IsIntersects(secondRectangle))
-                    {
+                {
                     Console.WriteLine("true");
                 }
                 else

@@ -15,7 +15,6 @@
 
         public Rectangle()
         {
-
         }
 
         public Rectangle(string id, double width, double height, double x, double y)
@@ -29,8 +28,6 @@
 
         public bool IsIntersects(Rectangle n)
         {
-            
-
             if ((n.y >= this.y && n.y - n.height <= this.y && n.x <= this.x && n.x + n.width >= this.x) ||
             (n.y >= this.y && n.y - n.height <= this.y && n.x >= this.x && n.x <= this.x + this.width) ||
             (n.y <= this.y && n.y >= this.y - this.height && n.x <= this.x && n.x + n.width >= this.x) ||

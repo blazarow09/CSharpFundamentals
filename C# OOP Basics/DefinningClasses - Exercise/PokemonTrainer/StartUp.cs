@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace PokemonTrainer
 {
-    class StartUp
+    internal class StartUp
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             List<Trainer> trainers = new List<Trainer>();
 
@@ -55,4 +55,3 @@ namespace PokemonTrainer
         }
     }
 }
-

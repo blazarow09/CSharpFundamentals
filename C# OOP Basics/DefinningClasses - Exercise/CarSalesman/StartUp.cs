@@ -6,7 +6,7 @@ namespace CarSalesman
 {
     public class StartUp
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int linesOfEngines = int.Parse(Console.ReadLine());
             List<Engine> engines = new List<Engine>();
@@ -16,7 +16,6 @@ namespace CarSalesman
                 string[] tokens = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 string model = tokens[0];
                 int power = int.Parse(tokens[1]);
-
 
                 if (tokens.Length == 2)
                 {

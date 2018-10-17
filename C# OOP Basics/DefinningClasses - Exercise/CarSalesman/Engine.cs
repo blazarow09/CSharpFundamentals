@@ -33,13 +33,13 @@
             set { model = value; }
         }
 
-        public Engine (string model, int power)
+        public Engine(string model, int power)
         {
             this.Model = model;
             this.Power = power;
         }
 
-        public Engine(string model, int power, int? displacement) :this(model, power)
+        public Engine(string model, int power, int? displacement) : this(model, power)
         {
             this.Displacement = displacement;
         }

@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace RawData
+﻿namespace RawData
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class StartUp
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var count = int.Parse(Console.ReadLine());
 
@@ -25,7 +25,7 @@ namespace RawData
 
                 var tires = new List<Tires>();
 
-                for (int j = 5; j < tokens.Length; j += 2) 
+                for (int j = 5; j < tokens.Length; j += 2)
                 {
                     var pressure = double.Parse(tokens[j]);
                     var age = int.Parse(tokens[j + 1]);

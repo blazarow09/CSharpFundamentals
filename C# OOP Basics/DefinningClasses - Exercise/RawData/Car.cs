@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace RawData
+﻿namespace RawData
 {
+    using System.Collections.Generic;
+
     public class Car
     {
         public string model;
@@ -9,7 +9,7 @@ namespace RawData
         public Cargo cargo;
         public List<Tires> tires;
 
-        public Car (string model, Engine engine, Cargo cargo, List<Tires> tires)
+        public Car(string model, Engine engine, Cargo cargo, List<Tires> tires)
         {
             this.model = model;
             this.engine = engine;

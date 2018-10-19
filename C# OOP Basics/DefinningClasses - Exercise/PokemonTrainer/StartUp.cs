@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace PokemonTrainer
+﻿namespace PokemonTrainer
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     internal class StartUp
     {
         private static void Main(string[] args)

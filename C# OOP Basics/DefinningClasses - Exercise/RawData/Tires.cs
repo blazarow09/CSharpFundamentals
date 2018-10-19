@@ -5,7 +5,7 @@
         public double pressure;
         public int age;
 
-        public Tires (double pressure, int age)
+        public Tires(double pressure, int age)
         {
             this.Pressure = pressure;
             this.Age = age;

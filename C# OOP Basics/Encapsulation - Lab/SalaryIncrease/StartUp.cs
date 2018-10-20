@@ -1,8 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 
 namespace SalaryIncrease
 {
+    using System;
+    using System.Collections.Generic;
+
     internal class StartUp
     {
         private static void Main(string[] args)

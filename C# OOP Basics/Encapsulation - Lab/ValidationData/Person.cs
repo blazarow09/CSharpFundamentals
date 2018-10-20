@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace ValidationData
+﻿namespace ValidationData
 {
+    using System;
+
     public class Person
     {
         private string firstName;

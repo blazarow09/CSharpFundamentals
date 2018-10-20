@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿
 namespace ValidationData
 {
+    using System;
+    using System.Collections.Generic;
+
     internal class StartUp
     {
         private static void Main(string[] args)

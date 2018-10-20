@@ -1,8 +1,8 @@
 ﻿using System;
 
-class StartUp
+internal class StartUp
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         BankAccount account = new BankAccount();
 
@@ -13,4 +13,3 @@ class StartUp
         Console.WriteLine(account);
     }
 }
-

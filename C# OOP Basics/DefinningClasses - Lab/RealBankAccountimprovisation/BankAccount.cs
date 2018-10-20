@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 public class BankAccount
 {
@@ -19,12 +18,12 @@ public class BankAccount
         set { balance = value; }
     }
 
-    public void Deposit (decimal amount)
+    public void Deposit(decimal amount)
     {
         this.Balance += amount;
     }
 
-    public void Withdraw (decimal amoumt)
+    public void Withdraw(decimal amoumt)
     {
         if (Balance >= amoumt)
         {

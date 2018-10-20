@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-class StartUp
+internal class StartUp
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var accounts = new Dictionary<string, BankAccount>();
 
@@ -21,12 +21,15 @@ class StartUp
                 case "Create":
                     CreateAccount(accName, accounts, tokens);
                     break;
+
                 case "Deposit":
                     DepositToAccount(accName, accounts, tokens);
                     break;
+
                 case "Withdraw":
                     WithdrawFormAccount(accName, accounts, tokens);
                     break;
+
                 case "Print":
                     PrintAccount(accName, accounts, tokens);
                     break;
@@ -35,7 +38,6 @@ class StartUp
             tokens = Console.ReadLine()
             .Split(" ", StringSplitOptions.RemoveEmptyEntries);
         }
-
     }
 
     private static void CreateAccount(string accName, Dictionary<string, BankAccount> accounts, string[] tokens)
@@ -99,6 +101,6 @@ class StartUp
         }
 
         Console.WriteLine("The name is not valid!");
-        return false; 
+        return false;
     }
 }

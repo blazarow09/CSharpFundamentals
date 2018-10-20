@@ -1,8 +1,6 @@
-﻿using System;
-
-public class BankAccount
+﻿public class BankAccount
 {
-    private int id; 
+    private int id;
 
     public int Id
     {
@@ -33,4 +31,3 @@ public class BankAccount
         return $"Account {this.Id}, balance {this.Balance}";
     }
 }
-

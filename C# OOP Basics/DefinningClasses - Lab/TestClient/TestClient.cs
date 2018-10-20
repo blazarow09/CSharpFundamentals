@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class TestClient
+internal class TestClient
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var accounts = new Dictionary<int, BankAccount>();
 
@@ -20,15 +20,19 @@ class TestClient
                 case "Create":
                     CreateAccount(line, accounts, accId);
                     break;
+
                 case "Deposit":
                     DepositToAccount(line, accounts, accId);
                     break;
+
                 case "Withdraw":
                     WithdrawFromAccount(line, accounts, accId);
                     break;
+
                 case "Print":
                     PrintAccount(line, accounts, accId);
                     break;
+
                 default:
                     break;
             }

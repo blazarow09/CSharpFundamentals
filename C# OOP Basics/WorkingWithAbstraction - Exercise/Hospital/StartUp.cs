@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Hospital
+﻿namespace Hospital
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class StartUp
     {
         public static void Main()

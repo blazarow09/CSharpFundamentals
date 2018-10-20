@@ -1,8 +1,8 @@
 ﻿using System;
 
-class Program
+internal class StartUp
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         string mainPersonInput = Console.ReadLine();
         FamilyTreeBuilder familyTreeBuilder = new FamilyTreeBuilder(mainPersonInput);

@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace P01_RawData
+﻿namespace P01_RawData
 {
+    using System.Collections.Generic;
+
     public class Car
     {
         private string model;

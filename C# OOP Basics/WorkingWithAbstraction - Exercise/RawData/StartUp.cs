@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace P01_RawData
+﻿namespace P01_RawData
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class RawData
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             List<Car> cars = new List<Car>();
 

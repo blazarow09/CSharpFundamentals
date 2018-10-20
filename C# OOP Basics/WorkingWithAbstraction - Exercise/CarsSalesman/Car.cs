@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace P02_CarsSalesman
+﻿namespace P02_CarsSalesman
 {
+    using System.Text;
+
     public class Car
     {
         private const string offset = "  ";
@@ -44,7 +42,6 @@ namespace P02_CarsSalesman
             this.weight = weight;
             this.color = color;
         }
-
 
         public override string ToString()
         {

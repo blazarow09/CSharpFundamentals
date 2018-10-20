@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace P02_CarsSalesman
+﻿namespace P02_CarsSalesman
 {
-    class CarSalesman
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    internal class CarSalesman
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             List<Car> cars = new List<Car>();
             List<Engine> engines = new List<Engine>();
@@ -75,5 +74,4 @@ namespace P02_CarsSalesman
             }
         }
     }
-
 }

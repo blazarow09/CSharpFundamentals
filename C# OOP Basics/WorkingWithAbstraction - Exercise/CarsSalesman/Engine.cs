@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace P02_CarsSalesman
+﻿namespace P02_CarsSalesman
 {
+    using System.Text;
+
     public class Engine
     {
         private const string offset = "  ";

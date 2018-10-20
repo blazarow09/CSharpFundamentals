@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace P05_GreedyTimes
+﻿namespace P05_GreedyTimes
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class Potato
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             long input = long.Parse(Console.ReadLine());
 
@@ -71,6 +71,7 @@ namespace P05_GreedyTimes
                             continue;
                         }
                         break;
+
                     case "Cash":
                         if (!bag.ContainsKey(value))
                         {

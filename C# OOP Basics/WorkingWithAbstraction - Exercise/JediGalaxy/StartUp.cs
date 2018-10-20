@@ -1,11 +1,11 @@
-﻿using System;
-using System.Linq;
-
-namespace P03_JediGalaxy
+﻿namespace P03_JediGalaxy
 {
-    class Program
+    using System;
+    using System.Linq;
+
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             int[] dimestions = Console.ReadLine()
                 .Split(" ", StringSplitOptions.RemoveEmptyEntries)

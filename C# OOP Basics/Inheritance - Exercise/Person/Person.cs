@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Person
 {
@@ -13,32 +14,33 @@ namespace Person
             this.Age = age;
         }
 
-        protected virtual string Name
+        public virtual string Name
         {
             get
             {
                 return this.name;
             }
-            set
+
+            protected set
             {
                 if (value.Length < 3)
                 {
-                    throw new ArgumentException("Name's length shoult not be less than 3 symbols!");
+                    throw new ArgumentException("Name's length should not be less than 3 symbols!");
                 }
-
                 this.name = value;
             }
         }
 
-        protected virtual int Age
+        public virtual int Age
         {
             get
             {
                 return this.age;
             }
-            set
+
+            protected set
             {
-                if (value <= 0)
+                if (value < 0)
                 {
                     throw new ArgumentException("Age must be positive!");
                 }
@@ -48,7 +50,9 @@ namespace Person
 
         public override string ToString()
         {
-            return $"Name: {this.Name}, Age: {this.Age}";
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append(String.Format("Name: {0}, Age: {1}", this.Name, this.Age));
+            return stringBuilder.ToString();
         }
     }
 }

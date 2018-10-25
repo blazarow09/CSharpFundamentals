@@ -2,21 +2,21 @@
 
 namespace Person
 {
-    internal class StartUp
+    public class StartUp
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var name = Console.ReadLine();
             var age = int.Parse(Console.ReadLine());
 
             try
             {
-                var child = new Child(name, age);
+                Child child = new Child(name, age);
                 Console.WriteLine(child);
             }
-            catch (ArgumentException ex)
+            catch (ArgumentException ae)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ae.Message);
             }
         }
     }

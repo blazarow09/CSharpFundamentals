@@ -4,19 +4,21 @@ namespace Person
 {
     public class Child : Person
     {
-        public Child(string name, int age) : base(name, age)
+        public Child(string name, int age)
+            : base(name, age)
         {
         }
 
-        protected override int Age
+        public override int Age
         {
             get
             {
                 return base.Age;
             }
-            set
+
+            protected set
             {
-                if (value >= 15)
+                if (value > 15)
                 {
                     throw new ArgumentException("Child's age must be less than 15!");
                 }

@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 
-public interface ICommando
+namespace MilitaryElite.Interfaces
 {
-    List<IMissions> Missions { get; }
+    public interface ICommando
+    {
+        IList<IMission> Missions { get; }
+    }
 }

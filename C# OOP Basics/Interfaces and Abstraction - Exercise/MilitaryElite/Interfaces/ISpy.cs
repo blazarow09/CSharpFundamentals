@@ -1,4 +1,7 @@
-﻿public interface ISpy
+﻿namespace MilitaryElite.Interfaces
 {
-    int CodeNumber { get; }
+    public interface ISpy
+    {
+        int CodeNumber { get; }
+    }
 }

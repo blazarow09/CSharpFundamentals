@@ -1,26 +1,32 @@
-﻿using System.Collections.Generic;
+﻿using MilitaryElite.Interfaces;
+using System.Collections.Generic;
 using System.Text;
 
-public class Commando : SpecialisedSoldier, ICommando
+namespace MilitaryElite.Models
 {
-    public Commando(string id, string firstName, string lastName, double salary, string corps, List<IMissions> missions) : base(id, firstName, lastName, salary, corps)
+    public class Commando : SpecialisedSoldier, ICommando
     {
-        this.Missions = missions;
-    }
-
-    public List<IMissions> Missions { get; }
-
-    public override string ToString()
-    {
-        StringBuilder sb = new StringBuilder();
-        sb.AppendLine(base.ToString());
-        sb.Append("Missions:");
-        foreach (var mission in this.Missions)
+        public Commando(string id, string firstName, string lastName, decimal salary, string corps, IList<IMission> missions) : base(id, firstName, lastName, salary, corps)
         {
-            sb.AppendLine();
-            sb.AppendFormat($"  {mission}");
+            this.Missions = missions;
         }
 
-        return sb.ToString();
+        public IList<IMission> Missions { get; }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(base.ToString());
+            sb.AppendLine($"Corps: {this.Corps}");
+            sb.AppendLine("Missions:");
+
+            foreach (var mission in this.Missions)
+            {
+                sb.AppendLine($"  {mission.ToString()}");
+            }
+
+            return sb.ToString().TrimEnd();
+        }
     }
 }

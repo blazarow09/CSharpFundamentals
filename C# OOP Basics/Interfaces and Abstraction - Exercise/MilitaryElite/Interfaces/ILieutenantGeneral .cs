@@ -2,8 +2,8 @@
 
 namespace MilitaryElite.Interfaces
 {
-    public interface IEngineer
+    public interface ILieutenantGeneral
     {
-        IList<IRepair> Repairs { get; }
+        IList<ISoldier> Privates { get; }
     }
 }

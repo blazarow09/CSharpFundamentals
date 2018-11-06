@@ -1,4 +1,7 @@
-﻿public interface IPrivate
+﻿namespace MilitaryElite.Interfaces
 {
-    double Salary { get; }
+    public interface IPrivate
+    {
+        decimal Salary { get; }
+    }
 }

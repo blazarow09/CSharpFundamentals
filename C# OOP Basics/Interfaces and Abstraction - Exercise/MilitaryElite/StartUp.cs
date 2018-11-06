@@ -1,8 +1,11 @@
-﻿public class StartUp
+﻿namespace MilitaryElite
 {
-    public static void Main(string[] args)
+    public class StartUp
     {
-        Engine engine = new Engine();
-        engine.Run();
+        private static void Main(string[] args)
+        {
+            Engine engine = new Engine();
+            engine.Run();
+        }
     }
 }

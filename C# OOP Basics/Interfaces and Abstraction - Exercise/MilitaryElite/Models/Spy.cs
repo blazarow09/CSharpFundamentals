@@ -1,19 +1,19 @@
-﻿using System.Text;
+﻿using MilitaryElite.Interfaces;
 
-public class Spy : Soldier, ISpy
+namespace MilitaryElite.Models
 {
-    public Spy(string id, string firstName, string lastName, int codeNumber) : base(id, firstName, lastName)
+    public class Spy : Soldier, ISpy
     {
-        this.CodeNumber = codeNumber;
-    }
+        public Spy(string id, string firstName, string lastName, int codeNumber) : base(id, firstName, lastName)
+        {
+            this.CodeNumber = codeNumber;
+        }
 
-    public int CodeNumber { get; }
+        public int CodeNumber { get; }
 
-    public override string ToString()
-    {
-        StringBuilder sb = new StringBuilder();
-        sb.AppendLine(base.ToString());
-        sb.Append("Code Number: " + this.CodeNumber);
-        return sb.ToString();
+        public override string ToString()
+        {
+            return $"Name: {this.FirstName} {this.LastName} Id: {this.Id}\n" + $"Code Number: {this.CodeNumber}";
+        }
     }
 }

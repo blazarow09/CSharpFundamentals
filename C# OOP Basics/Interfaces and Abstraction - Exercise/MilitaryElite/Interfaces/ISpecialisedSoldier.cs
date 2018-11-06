@@ -1,4 +1,7 @@
-﻿public interface ISpecialisedSoldier
+﻿namespace MilitaryElite.Interfaces
 {
-    string Corps { get; }
+    public interface ISpecialisedSoldier
+    {
+        string Corps { get; }
+    }
 }

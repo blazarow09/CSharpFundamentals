@@ -1,117 +1,150 @@
-﻿using System;
+﻿using MilitaryElite.Enums;
+using MilitaryElite.Interfaces;
+using MilitaryElite.Models;
+using System;
 using System.Collections.Generic;
 
-internal class Engine
+namespace MilitaryElite
 {
-    internal void Run()
+    public class Engine
     {
-        ExecuteCommands();
-    }
-
-    private void ExecuteCommands()
-    {
-        var soldiersById = new Dictionary<int, ISoldier>();
-
-        var line = Console.ReadLine();
-
-        while (line != "End")
+        public void Run()
         {
-            var tokens = line.Split();
-            var soldierType = tokens[0];
-            var id = tokens[1];
-            var firstName = tokens[2];
-            var lastnName = tokens[3];
+            Dictionary<int, ISoldier> soldiers = new Dictionary<int, ISoldier>();
 
-            switch (soldierType)
+            string line = Console.ReadLine();
+
+            while (line != "End")
             {
-                case "Private":
-                    var salary = double.Parse(tokens[4]);
-                    soldiersById.Add(int.Parse(id), new Private(id, firstName, lastnName, salary));
-                    break;
+                var tokens = line.Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
-                case "LeutenantGeneral":
-                    salary = double.Parse(tokens[4]);
-                    var privates = new List<ISoldier>();
+                var type = tokens[0];
+                var id = tokens[1];
+                var firstName = tokens[2];
+                var lastName = tokens[3];
+                var salary = 0m;
+                Corps corp;
 
-                    for (int i = 5; i < tokens.Length; i++)
-                    {
-                        var privateId = int.Parse(tokens[i]);
-                        privates.Add(soldiersById[privateId]);
-                    }
+                switch (type)
+                {
+                    case "Private":
+                        salary = decimal.Parse(tokens[4]);
 
-                    soldiersById.Add(int.Parse(id), new LeutenantGeneral(id, firstName, lastnName, salary, privates));
-                    break;
+                        var privateSoldier = new Private(id, firstName, lastName, salary);
 
-                case "Engineer":
-                    salary = double.Parse(tokens[4]);
-                    var corps = tokens[5];
+                        soldiers.Add(int.Parse(id), privateSoldier);
+                        break;
 
-                    var repairs = new List<IRepairs>();
+                    case "LieutenantGeneral":
+                        salary = decimal.Parse(tokens[4]);
 
-                    for (int i = 6; i < tokens.Length; i += 2)
-                    {
-                        var partName = tokens[i];
-                        var hoursWorked = int.Parse(tokens[i + 1]);
+                        List<ISoldier> privates = new List<ISoldier>();
 
-                        var repair = new Repairs(partName, hoursWorked);
+                        for (int i = 5; i < tokens.Length; i++)
+                        {
+                            var privateId = tokens[i];
+                            privates.Add(soldiers[int.Parse(privateId)]);
+                        }
 
-                        repairs.Add(repair);
+                        var lieutenantGeneral = new LieutenantGeneral(id, firstName, lastName, salary, privates);
+
+                        soldiers.Add(int.Parse(id), lieutenantGeneral);
+                        break;
+
+                    case "Engineer":
+                        salary = decimal.Parse(tokens[4]);
+
+                        if (!Enum.TryParse(tokens[5], out corp))
+                        {
+                            continue;
+                        }
+
+                        List<IRepair> repairs = new List<IRepair>();
+
+                        for (int i = 6; i < tokens.Length; i += 2)
+                        {
+                            var partName = tokens[i];
+                            var hoursWorked = int.Parse(tokens[i + 1]);
+
+                            try
+                            {
+                                var repair = new Repair(partName, hoursWorked);
+
+                                repairs.Add(repair);
+                            }
+                            catch (ArgumentException)
+                            {
+                            }
+                        }
 
                         try
                         {
-                            soldiersById.Add(int.Parse(id), new Engineer(id, firstName, lastnName, salary, corps, repairs));
+                            var engineer = new Engineer(id, firstName, lastName, salary, corp.ToString(), repairs);
+
+                            soldiers.Add(int.Parse(id), engineer);
                         }
                         catch (ArgumentException)
                         {
                         }
-                    }
-                    break;
+                        break;
 
-                case "Commando":
-                    salary = double.Parse(tokens[4]);
-                    corps = tokens[5];
+                    case "Commando":
+                        salary = decimal.Parse(tokens[4]);
 
-                    var missions = new List<IMissions>();
+                        if (!Enum.TryParse(tokens[5], out corp))
+                        {
+                            continue;
+                        }
 
-                    for (int i = 6; i < tokens.Length; i += 2)
-                    {
-                        var codeName = tokens[i];
-                        var state = tokens[i + 1];
+                        List<IMission> missions = new List<IMission>();
+
+                        for (int i = 6; i < tokens.Length; i += 2)
+                        {
+                            var codeName = tokens[i];
+                            MissionStatus state;
+
+                            if (!Enum.TryParse(tokens[i + 1], out state))
+                            {
+                                continue;
+                            }
+
+                            try
+                            {
+                                var mission = new Mission(codeName, state.ToString());
+                                missions.Add(mission);
+                            }
+                            catch (ArgumentException)
+                            {
+                            }
+                        }
 
                         try
                         {
-                            var mission = new Missions(codeName, state);
+                            var commando = new Commando(id, firstName, lastName, salary, corp.ToString(), missions);
 
-                            missions.Add(mission);
+                            soldiers.Add(int.Parse(id), commando);
                         }
                         catch (ArgumentException)
                         {
                         }
-                    }
+                        break;
 
-                    try
-                    {
-                        soldiersById.Add(int.Parse(id), new Commando(id, firstName, lastnName, salary, corps, missions));
-                    }
-                    catch (ArgumentException ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                    }
-                    break;
+                    case "Spy":
+                        var codeNumber = int.Parse(tokens[4]);
 
-                case "Spy":
-                    var codeNumber = int.Parse(tokens[4]);
+                        var spy = new Spy(id, firstName, lastName, codeNumber);
 
-                    soldiersById.Add(int.Parse(id), new Spy(id, firstName, lastnName, codeNumber));
-                    break;
+                        soldiers.Add(int.Parse(id), spy);
+                        break;
+                }
+
+                line = Console.ReadLine();
             }
 
-            line = Console.ReadLine();
-        }
-
-        foreach (var soldier in soldiersById)
-        {
-            Console.WriteLine(soldier.Value);
+            foreach (var soldier in soldiers.Values)
+            {
+                Console.WriteLine(soldier);
+            }
         }
     }
 }

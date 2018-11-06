@@ -1,26 +1,32 @@
-﻿using System.Collections.Generic;
+﻿using MilitaryElite.Interfaces;
+using System.Collections.Generic;
 using System.Text;
 
-public class Engineer : SpecialisedSoldier, IEngineer
+namespace MilitaryElite.Models
 {
-    public Engineer(string id, string firstName, string lastName, double salary, string corps, List<IRepairs> repairs) : base(id, firstName, lastName, salary, corps)
+    public class Engineer : SpecialisedSoldier, IEngineer
     {
-        this.Repairs = repairs;
-    }
-
-    public List<IRepairs> Repairs { get; }
-
-    public override string ToString()
-    {
-        StringBuilder sb = new StringBuilder();
-        sb.AppendLine(base.ToString());
-        sb.Append("Repairs:");
-        foreach (var repair in this.Repairs)
+        public Engineer(string id, string firstName, string lastName, decimal salary, string corps, IList<IRepair> repairs) : base(id, firstName, lastName, salary, corps)
         {
-            sb.AppendLine();
-            sb.AppendFormat("  {0}", repair);
+            this.Repairs = repairs;
         }
 
-        return sb.ToString();
+        public IList<IRepair> Repairs { get; }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(base.ToString());
+            sb.AppendLine($"Corps: {this.Corps}");
+            sb.AppendLine("Repairs:");
+
+            foreach (var repair in this.Repairs)
+            {
+                sb.AppendLine($"  {repair.ToString()}");
+            }
+
+            return sb.ToString().TrimEnd();
+        }
     }
 }

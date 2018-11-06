@@ -1,4 +1,6 @@
-﻿public class Citizen : IPerson
+﻿namespace PersonInfo
+{
+public class Citizen : IPerson
 {
     public Citizen(string name, int age)
     {
@@ -9,4 +11,4 @@
     public string Name { get; set; }
 
     public int Age { get; set; }
-}
+}}

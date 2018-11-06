@@ -1,25 +1,28 @@
-﻿public class Citizen : IPerson, IResident
+﻿namespace PersonInfo
 {
-    public Citizen(string name)
+    public class Citizen : IPerson, IResident
     {
-        this.Name = name;
-    }
+        public Citizen(string name)
+        {
+            this.Name = name;
+        }
 
-    public string Name { get; }
+        public string Name { get; }
 
-    public string Age { get; }
+        public string Age { get; }
 
-    string IResident.Name { get; }
+        string IResident.Name { get; }
 
-    string IResident.Country { get; }
+        string IResident.Country { get; }
 
-    public string GetName()
-    {
-        return $"{this.Name}";
-    }
+        public string GetName()
+        {
+            return $"{this.Name}";
+        }
 
-    string IResident.GetName()
-    {
-        return $"Mr/Ms/Mrs {this.Name}";
+        string IResident.GetName()
+        {
+            return $"Mr/Ms/Mrs {this.Name}";
+        }
     }
 }

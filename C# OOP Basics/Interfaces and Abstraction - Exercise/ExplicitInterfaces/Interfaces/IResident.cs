@@ -1,8 +1,11 @@
-﻿public interface IResident
+﻿namespace PersonInfo
 {
-    string Name { get; }
+    public interface IResident
+    {
+        string Name { get; }
 
-    string Country { get; }
+        string Country { get; }
 
-    string GetName();
+        string GetName();
+    }
 }

@@ -1,8 +1,11 @@
-﻿public interface IPerson
+﻿namespace PersonInfo
 {
-    string Name { get; }
+    public interface IPerson
+    {
+        string Name { get; }
 
-    string Age { get; }
+        string Age { get; }
 
-    string GetName();
+        string GetName();
+    }
 }

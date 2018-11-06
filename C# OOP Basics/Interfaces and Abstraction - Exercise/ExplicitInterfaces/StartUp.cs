@@ -1,22 +1,25 @@
 ﻿using System;
 
-public class StartUp
+namespace PersonInfo
 {
-    public static void Main(string[] args)
+    public class StartUp
     {
-        var line = Console.ReadLine();
-
-        while (line != "End")
+        public static void Main(string[] args)
         {
-            var tokens = line.Split();
+            var line = Console.ReadLine();
 
-            IResident citizen = new Citizen(tokens[0]);
-            IPerson mrsCitizen = new Citizen(tokens[0]);
+            while (line != "End")
+            {
+                var tokens = line.Split();
 
-            Console.WriteLine(mrsCitizen.GetName());
-            Console.WriteLine(citizen.GetName());
+                IResident citizen = new Citizen(tokens[0]);
+                IPerson mrsCitizen = new Citizen(tokens[0]);
 
-            line = Console.ReadLine();
+                Console.WriteLine(mrsCitizen.GetName());
+                Console.WriteLine(citizen.GetName());
+
+                line = Console.ReadLine();
+            }
         }
     }
 }

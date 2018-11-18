@@ -1,5 +1,4 @@
-﻿using AnimalCentre.Models.Contracts;
-using AnimalCentre.Models.Factories;
+﻿using AnimalCentre.Models.Factories;
 using AnimalCentre.Models.Hotel;
 using AnimalCentre.Models.Procedures;
 using System;
@@ -42,10 +41,7 @@ namespace AnimalCentre.Core
 
         public string Chip(string name, int procedureTime)
         {
-            if (this.hotel.Animals.ContainsKey(name) == false)
-            {
-                throw new ArgumentException($"Animal {name} does not exist");
-            }
+            this.DoesExist(name);
 
             var animal = hotel.GetAnimal(name);
 
@@ -66,10 +62,7 @@ namespace AnimalCentre.Core
 
         public string Vaccinate(string name, int procedureTime)
         {
-            if (this.hotel.Animals.ContainsKey(name) == false)
-            {
-                throw new ArgumentException($"Animal {name} does not exist");
-            }
+            this.DoesExist(name);
 
             var animal = hotel.GetAnimal(name);
 
@@ -90,10 +83,7 @@ namespace AnimalCentre.Core
 
         public string Fitness(string name, int procedureTime)
         {
-            if (this.hotel.Animals.ContainsKey(name) == false)
-            {
-                throw new ArgumentException($"Animal {name} does not exist");
-            }
+            this.DoesExist(name);
 
             var animal = hotel.GetAnimal(name);
 
@@ -114,10 +104,7 @@ namespace AnimalCentre.Core
 
         public string Play(string name, int procedureTime)
         {
-            if (this.hotel.Animals.ContainsKey(name) == false)
-            {
-                throw new ArgumentException($"Animal {name} does not exist");
-            }
+            this.DoesExist(name);
 
             var animal = hotel.GetAnimal(name);
 
@@ -138,10 +125,7 @@ namespace AnimalCentre.Core
 
         public string DentalCare(string name, int procedureTime)
         {
-            if (this.hotel.Animals.ContainsKey(name) == false)
-            {
-                throw new ArgumentException($"Animal {name} does not exist");
-            }
+            this.DoesExist(name);
 
             var animal = hotel.GetAnimal(name);
 
@@ -162,10 +146,7 @@ namespace AnimalCentre.Core
 
         public string NailTrim(string name, int procedureTime)
         {
-            if (this.hotel.Animals.ContainsKey(name) == false)
-            {
-                throw new ArgumentException($"Animal {name} does not exist");
-            }
+            this.DoesExist(name);
 
             var animal = hotel.GetAnimal(name);
 
@@ -186,10 +167,7 @@ namespace AnimalCentre.Core
 
         public string Adopt(string animalName, string owner)
         {
-            if (this.hotel.Animals.ContainsKey(animalName) == false)
-            {
-                throw new ArgumentException($"Animal {animalName} does not exist");
-            }
+            this.DoesExist(animalName);
 
             var animal = hotel.GetAnimal(animalName);
 
@@ -214,12 +192,9 @@ namespace AnimalCentre.Core
 
         public string History(string type)
         {
-            return this.procedures.First(x => x.GetType().Name.ToString() == type).History();
-        }
-
-        public Dictionary<string, List<IAnimal>> GetAdoptedAnimals()
-        {
-            return hotel.adoptedAnimals;
+            return this.procedures
+                .First(x => x.GetType().Name.ToString() == type)
+                .History();
         }
 
         public string PrintAdoptedAnimals()
@@ -233,6 +208,14 @@ namespace AnimalCentre.Core
             }
 
             return sb.ToString().TrimEnd();
+        }
+
+        private void DoesExist(string name)
+        {
+            if (this.hotel.Animals.ContainsKey(name) == false)
+            {
+                throw new ArgumentException($"Animal {name} does not exist");
+            }
         }
     }
 }

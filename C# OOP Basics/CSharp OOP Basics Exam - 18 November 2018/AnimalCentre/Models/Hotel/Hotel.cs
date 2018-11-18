@@ -12,7 +12,6 @@ namespace AnimalCentre.Models.Hotel
 
         public Hotel()
         {
-            
             this.animals = new Dictionary<string, IAnimal>();
         }
 
@@ -43,7 +42,7 @@ namespace AnimalCentre.Models.Hotel
                 throw new ArgumentException($"Animal {animalName} does not exist");
             }
 
-            var animal = this.animals.Values.Where(n => n.Name == animalName).FirstOrDefault();
+            var animal = this.GetAnimal(animalName);
 
             animal.Owner = owner;
             animal.IsAdopt = true;

@@ -11,8 +11,6 @@ namespace AnimalCentre.Core
         public void Run()
         {
             Hotel hotel = new Hotel();
-            AnimalCentre animalCentre = new AnimalCentre();
-
             var line = Console.ReadLine()
                 .Split()
                 .ToList();
@@ -20,6 +18,7 @@ namespace AnimalCentre.Core
             var isRunning = true;
             command = line[0];
 
+            AnimalCentre animalCentre = new AnimalCentre();
             while (isRunning)
             {
                 string name = string.Empty;
@@ -175,6 +174,33 @@ namespace AnimalCentre.Core
             }
 
             Console.WriteLine(animalCentre.PrintAdoptedAnimals());
+        }
+
+        public string GetProcedureName()
+        {
+            switch (command)
+            {
+                case "Chip":
+                    return "Chip";
+
+                case "Vaccinate":
+                    return "Vaccinate";
+
+                case "Fitness":
+                    return "Fitness";
+
+                case "Play":
+                    return "Play";
+
+                case "DentalCare":
+                    return "DentalCare";
+
+                case "NailTrim":
+                    return "NailTrim";
+
+                default:
+                    return null;
+            }
         }
     }
 }

@@ -36,7 +36,7 @@ namespace AnimalCentre.Core
                 hotel.Accommodate(animal);
             }
 
-            return $"Animal {name} registered succesfully";
+            return $"Animal {name} registered successfully";
         }
 
         public string Chip(string name, int procedureTime)

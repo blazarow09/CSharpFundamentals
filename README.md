@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/blazarow09/ProgrammingBasicsWithCsharp/blob/master/img/logo.png" /></p>
 
-# <a href="https://softuni.bg/modules/20/csharp-fundamentals"><p align="center">C# Fundamentals<p></a>
+# <a href="https://softuni.bg/modules/20/csharp-fundamentals"><p align="center">C# Fundamentals - September 2018<p></a>
 
 ## <p align="center"> <a href="https://softuni.bg/certificates/details/58213/1bfcfba0" > *Certificate* C# Advanced </a> </p>
 ## <p align="center"> <a href="https://softuni.bg/certificates/details/59861/7b7f1657" > *Certificate* C# OOP Basics </a> </p>

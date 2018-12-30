@@ -2,7 +2,10 @@
 
 # <a href="https://softuni.bg/modules/20/csharp-fundamentals"><p align="center">C# Fundamentals<p></a>
 
-## <p align="center"> <a href="https://softuni.bg/certificates/details/58213/1bfcfba0" > *CERTIFICATE* C# Advanced </a> </p>
+## <p align="center"> <a href="https://softuni.bg/certificates/details/58213/1bfcfba0" > *Certificate* C# Advanced </a> </p>
+## <p align="center"> <a href="https://softuni.bg/certificates/details/59861/7b7f1657" > *Certificate* C# OOP Basics </a> </p>
+## <p align="center"> <a href="https://softuni.bg/certificates/details/61338/6f205a37" > *Certificate* C# OOP Advanced </a> </p>
+
 
 |           | C# Advanced        ||
 | ------------- |:-------------:|:-----:|
